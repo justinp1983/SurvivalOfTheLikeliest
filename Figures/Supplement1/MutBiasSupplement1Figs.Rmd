@@ -1,0 +1,65 @@
+---
+title: "Supplement1Figs"
+author: "Scott Leighow"
+date: "February 7, 2019"
+output: html_document
+---
+
+
+## Supplement 1: Analytic Solution to Probability Model
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+setwd("C:/Users/Scott/Box Sync/MutBias/Figures/Supplement1/")
+rm(list=ls())
+```
+
+
+## Cumulative Mutation Risk
+
+```{r}
+
+```
+
+
+## Instantaneous Mutation Risk
+
+```{r}
+
+```
+
+
+## Integration Region
+
+```{r}
+
+rm(list=ls())
+
+Tm = 2.5
+DT = 0.75
+
+ggplot()+theme_bw()+
+  geom_ribbon(aes(ymin=c(0,0),ymax=c(0,2*Tm-DT),x=c(DT,2*Tm)),fill="gray75")+
+  geom_hline(yintercept=Tm)+
+  geom_vline(xintercept=Tm)+
+  geom_abline(slope=1,intercept=-DT)+
+  geom_segment(aes(x=Tm+DT,y=0,xend=Tm+DT,yend=0+Tm))+
+  geom_text(aes(label="D1"),x=2,y=0.75,size=10)+
+  geom_text(aes(label="D2"),x=2.85,y=0.75,size=10)+
+  geom_text(aes(label="D3"),x=4.25,y=0.75,size=10)+
+  geom_text(aes(label="D4"),x=4.25,y=3,size=10)+
+  scale_x_continuous(limits=c(0,2*Tm),breaks=c(0,DT,Tm,Tm+DT),labels=parse(text=c('0','DT','T','T+DT')))+
+  scale_y_continuous(limits=c(0,2*Tm),breaks=c(0,Tm),labels=c('0','T'))+
+  xlab(bquote(t['mut,A']))+ylab(bquote(t['mut,B']))+
+  theme(
+    axis.text = element_text(size=16,color='black'),
+    axis.title = element_text(size=16),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank())
+  )
+
+# ggsave("Subintegral.pdf",width=6,height=6)
+
+
+```

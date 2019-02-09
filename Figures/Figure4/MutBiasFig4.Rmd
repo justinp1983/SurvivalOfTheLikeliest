@@ -1,0 +1,25 @@
+---
+title: "MutBiasFig4"
+author: "Scott Leighow"
+date: "February 7, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+setwd("C:/Users/Scott/Box Sync/MutBias/Figures/Figure4/")
+library(ggplot2)
+```
+
+## Figure 4B
+
+
+```{r}
+
+```
+
+## Figure 4C
+
+```{r}
+
+```

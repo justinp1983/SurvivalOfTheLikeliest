@@ -1,0 +1,30 @@
+---
+title: "MutBiasFig5"
+author: "Scott Leighow"
+date: "February 7, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+setwd("C:/Users/Scott/Box Sync/MutBias/Figures/Figure5/")
+```
+
+## Figure 5A: Nilotinib and Dasatinib Power Curves
+
+```{r}
+
+```
+
+## Figure 5B: Nilotinib and Dasatinib Drug Resistance Profiles
+
+```{r}
+
+```
+
+## Figure 5D: Maxitinib Resistance Profile
+## Figure 5E: Maxitinib Simulation Results
+
+```{r}
+
+```
