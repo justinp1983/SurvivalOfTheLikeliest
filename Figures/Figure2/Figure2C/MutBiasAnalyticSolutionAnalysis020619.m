@@ -4,8 +4,8 @@
 clear
 close all
 
-mu_vec = logspace(-9,-6,100);
-M_vec = logspace(4,11,100);
+mu_vec = logspace(-9,-6,125);
+M_vec = logspace(4,12,125);
 
 n_mu = length(mu_vec);
 n_M = length(M_vec);
